@@ -23,10 +23,9 @@ Pod::Spec.new do |s|
   s.source           = { :git => "https://github.com/matthewpalmer/Locksmith.git", :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/_matthewpalmer'
 
-s.platforms     =  {
-"iOS": "8.0",
-"watchos": "2.0"
-}
+s.platform     = :ios
+s.ios.deployment_target = "8.0"
+s.watchos.deployment_target = "2.0"
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/*.{m,h,swift}'
